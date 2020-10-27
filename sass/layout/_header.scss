@@ -16,6 +16,8 @@
     }
 
     .address {
+        display: flex;
+        align-items: center;
         margin-left: auto;  
         }
 
@@ -36,11 +38,11 @@
   }
 
 
-.navigation-list {
-    
+.navigation-list {    
     display: flex;
+    align-items: center;
 
-    &-link {        
+    &-link {                   
         font-weight: 500;
         font-size: 14px;
         line-height: 1.143;
@@ -48,6 +50,8 @@
         color: $title-main-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;  
+
 
         &:hover,
         &:focus {
@@ -59,17 +63,12 @@
         margin-right: 50px;
     }
 
-    &-link {
-        position: relative;  
-    
-    }
-    
+   
   }
 
 
 .email-icon{
-
-    display: inline-block;
+    display: inline-block;    
     width: 16px;
     height: 12px;
     margin-right: 10px;    
@@ -83,20 +82,22 @@
 }
 
 .tel-icon {
-    display: inline-block;
+    display: inline-block;       
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: $secondary-color;
 
-    .header-email-link:hover &,
-    .header-email-link:focus & {
+    .header-tel-link:hover &,
+    .header-tel-link:focus & {
         fill: $accent-color; 
     }
 }
 
 
 .header-email-link {
+    display: inline-flex;
+    align-items: center;
     margin-right: 50px;
     font-family: $main-font;    
     font-weight: 500;
@@ -114,6 +115,9 @@
 }
 
 .header-tel-link {
+    display: inline-flex;
+    align-items: center;
+   
     font-family: $main-font;    
     font-weight: 500;
     font-size: 14px;

@@ -156,6 +156,8 @@ body {
 }
 
 .header .address {
+  display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -175,6 +177,7 @@ body {
 
 .navigation-list {
   display: flex;
+  align-items: center;
 }
 
 .navigation-list-link {
@@ -185,6 +188,7 @@ body {
   color: #212121;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .navigation-list-link:hover, .navigation-list-link:focus {
@@ -193,10 +197,6 @@ body {
 
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.navigation-list-link {
-  position: relative;
 }
 
 .email-icon {
@@ -220,12 +220,14 @@ body {
   fill: #757575;
 }
 
-.header-email-link:hover .tel-icon,
-.header-email-link:focus .tel-icon {
+.header-tel-link:hover .tel-icon,
+.header-tel-link:focus .tel-icon {
   fill: #2196F3;
 }
 
 .header-email-link {
+  display: inline-flex;
+  align-items: center;
   margin-right: 50px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -242,6 +244,8 @@ body {
 }
 
 .header-tel-link {
+  display: inline-flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
